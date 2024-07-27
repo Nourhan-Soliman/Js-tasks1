@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+.clock {
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+.clock::after {
+    content: '';
+    display: block;
+    margin-top: 10px;
+    height: 4px;
+    width: 50px;
+    background: #feb47b;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2px;
+}
